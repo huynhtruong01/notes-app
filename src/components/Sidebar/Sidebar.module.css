@@ -1,0 +1,88 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 82px 20px 0;
+}
+
+.sidebarAddIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.sidebarAddIcon.show {
+    transform: rotate(135deg);
+    transition: 0.2s ease-in-out;
+}
+
+.sidebarAddIcon i {
+    transition: 0.2s ease-in-out;
+}
+
+.sidebarAddIcon:hover i {
+    transform: rotate(135deg);
+}
+
+.sidebarList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebarListItem {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 92px);
+    width: 21px;
+    height: 21px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+
+.sidebarListItem:hover {
+    border-color: #495579;
+}
+
+.sidebarListItem.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebarListItem.active:nth-child(1) {
+    transform: translate(-50%, 138px);
+}
+
+.sidebarListItem.active:nth-child(2) {
+    transform: translate(-50%, 170px);
+}
+
+.sidebarListItem.active:nth-child(3) {
+    transform: translate(-50%, 203px);
+}
+
+.sidebarListItem.active:nth-child(4) {
+    transform: translate(-50%, 235px);
+}
+
+.sidebarListItem.active:nth-child(5) {
+    transform: translate(-50%, 267px);
+}
+
+.sidebarListItem.active:nth-child(6) {
+    transform: translate(-50%, 299px);
+}

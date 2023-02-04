@@ -1,0 +1,10 @@
+.note {
+    flex: 1 1 0;
+    padding: 20px;
+}
+
+.noteTitle {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 12px;
+}

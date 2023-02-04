@@ -1,0 +1,36 @@
+.inputField label {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: #333;
+    font-size: 14px;
+}
+
+.inputField.error label {
+    color: #cd0404;
+}
+
+.inputField input {
+    padding: 8px;
+    border: 2px solid #999;
+    border-radius: 6px;
+}
+
+.inputField input::placeholder {
+    color: #999999;
+}
+
+.inputField.error input {
+    border-color: #cd0404;
+    color: #cd0404;
+}
+
+.inputField.error input::placeholder {
+    color: #cd0404;
+}
+
+.inputField small {
+    padding-left: 4px;
+    color: #cd0404;
+    font-weight: 500;
+}

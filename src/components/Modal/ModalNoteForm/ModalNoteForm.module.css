@@ -1,0 +1,81 @@
+.modalNote {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000099;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalNoteForm {
+    position: relative;
+    width: 450px;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 24px;
+    border-radius: 12px;
+    transform: translateY(-70px);
+    animation: slideDown 0.5s alternate;
+}
+
+.modalNoteForm h2 {
+    text-align: center;
+    margin: 10px 0;
+    color: #333;
+    font-weight: 600;
+}
+
+.modalNoteBtn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.modalNoteBtn i {
+    margin-right: 4px;
+}
+
+.modalNoteFormBtnAdd {
+    background-color: #cd0404cc;
+}
+
+.modalNoteFormBtnAdd:hover {
+    background-color: #cd0404;
+}
+
+.modalNoteFormBtnUpdate {
+    background-color: #00337ccc;
+}
+
+.modalNoteFormBtnUpdate:hover {
+    background-color: #00337c;
+}
+
+.modalNoteFormBtnClose {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    color: #cd0404;
+}
+
+.modalNoteFormBtnClose i {
+    font-size: 25px;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-120px);
+    }
+
+    to {
+        transform: translateY(-70px);
+    }
+}

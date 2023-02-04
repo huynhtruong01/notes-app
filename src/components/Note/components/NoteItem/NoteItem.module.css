@@ -1,0 +1,78 @@
+.noteItem {
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.noteItem h4 {
+    color: #333;
+    font-size: 14px;
+}
+
+.noteItemHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.noteItemBtnStar svg {
+    color: #333;
+    font-size: 18px;
+}
+
+.noteItemStarSave svg {
+    color: #fce22a;
+}
+
+.noteItemText {
+    width: 100%;
+    margin: 16px 0 12px;
+}
+
+.noteItemTime {
+    font-size: 13px;
+}
+
+.noteButtons {
+    display: flex;
+    align-items: center;
+}
+
+.noteButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.noteButtonEdit {
+    color: #00425acc;
+    transition: 0.2s ease-in-out;
+}
+
+.noteButtonEdit:hover {
+    color: #fff;
+    background-color: #00425a;
+}
+
+.noteButtonDelete {
+    color: #cd0404cc;
+    margin-left: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.noteButtonDelete:hover {
+    color: #fff;
+    background-color: #cd0404;
+}
+
+.noteItemFeatures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
