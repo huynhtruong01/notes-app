@@ -3,6 +3,6 @@ export const LS = {
         localStorage.setItem(key, JSON.stringify(data))
     },
     getLS(key: string) {
-        return JSON.parse(localStorage.getItem(key)) || []
+        return JSON.parse(localStorage.getItem(key) || '[]')
     },
 }
