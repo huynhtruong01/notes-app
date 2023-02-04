@@ -5,4 +5,7 @@ export const LS = {
     getLS(key: string) {
         return JSON.parse(localStorage.getItem(key) || '[]')
     },
+    removeLS(key: string) {
+        localStorage.removeItem(key)
+    },
 }

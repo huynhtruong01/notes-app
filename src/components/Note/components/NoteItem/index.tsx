@@ -58,7 +58,6 @@ export function NoteItem({ note }: INoteItemProps) {
             text: `You delete note "${note.title}"?`,
             icon: 'warning',
             showCancelButton: true,
-            confirmButtonColor: '#28a745',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Yes, delete it!',
             reverseButtons: true,

@@ -9,7 +9,6 @@
     position: relative;
     width: 230px;
     height: 32px;
-    margin-right: 12px;
 }
 
 .noteFiltersSearch svg {
@@ -41,22 +40,40 @@
     color: #1c315e;
 }
 
-.noteFiltersBtnSave {
+.noteFiltersBtn {
+    margin-left: 12px;
     padding: 4px 16px;
     font-size: 13px;
-    border: 2px solid #eeeeee;
     border-radius: 20px;
     font-weight: 500;
-    background-color: #eeeeee33;
     color: #eeeeee;
+    border: 2px solid;
 }
 
-.noteFiltersBtnSave svg {
+.noteFiltersBtn svg {
     margin-right: 4px;
+}
+
+.noteFiltersBtnSave {
+    border-color: #eeeeee;
+    background-color: #eeeeee33;
 }
 
 .noteFiltersBtnSave.active {
     border-color: #1c315e;
     background-color: #1c315e33;
     color: #1c315e;
+}
+
+.noteFiltersBtnDeleteAll {
+    border-color: #cd0404;
+    background-color: #cd040433;
+    color: #cd0404;
+}
+
+.disabled {
+    cursor: not-allowed;
+    border: 2px solid #eeeeee;
+    background-color: #eeeeee33;
+    color: #33333333;
 }

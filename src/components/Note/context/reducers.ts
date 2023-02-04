@@ -1,3 +1,4 @@
+import { NOTE_LIST } from '../../../environments'
 import { DataNote } from '../../../types'
 import { LS } from '../../../utils'
 import { DataNoteForm } from './../../../types/note'
@@ -11,7 +12,6 @@ export interface DataInitValues {
     noteDetail: DataNote
     search: string
 }
-const NOTE_LIST = 'NOTE_LIST'
 
 export const initValues: DataInitValues = {
     noteList: LS.getLS(NOTE_LIST),
@@ -34,9 +34,9 @@ function reducers(
 ): DataInitValues {
     switch (action.title) {
         case NoteActionTypes.SET_NOTE_LIST:
-            return { ...state, noteList: action.payload }
+            return { ...state, noteList: [...action.payload] }
         case NoteActionTypes.SET_NOTE_FILTERS_LIST:
-            return { ...state, noteFilterList: action.payload }
+            return { ...state, noteFilterList: [...action.payload] }
         case NoteActionTypes.SHOW_MODAL_NOTE:
             return { ...state, showModalNote: action.payload }
         case NoteActionTypes.NOTE_DETAIL:
